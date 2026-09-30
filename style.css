@@ -59,6 +59,7 @@ section {
   filter: blur(90px);
   opacity: .22;
   animation: pulse 4s ease-in-out infinite;
+  pointer-events: none;
 }
 
 .eyebrow {
@@ -291,4 +292,14 @@ figcaption {
   .gallery figure:nth-child(2) { display: none; }
   .letter { padding: 25px 21px; }
   section { padding: 55px 18px; }
+}
+.petals {
+  pointer-events: none;
+}
+
+.open-btn,
+.next-btn,
+.replay {
+  position: relative;
+  z-index: 5;
 }
